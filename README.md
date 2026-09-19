@@ -108,7 +108,7 @@
 
 ```bash
 # 1. استنساخ المشروع
-git clone <رابط-المستودع>
+git clone <https://github.com/Mohammed-Hijazi/VulnHunter>
 cd vulnhunter
 
 # 2. تثبيت المكتبات
