@@ -179,21 +179,7 @@ vulnhunter/
 - **SSR-safe localStorage**: حماية من أخطاء Server-Side Rendering
 - **next/dynamic مع ssr:false**: تحميل مكتبة تلوين الكود في المتصفح فقط
 
----
 
-## 📸 لقطات الشاشة
-
-> *(أضف هنا صور المشروع لاحقاً في مجلد `public/screenshots/`)*
-
-| الصفحة الرئيسية | ساحة التحديات |
-|:---:|:---:|
-| ![home](public/screenshots/home.png) | ![challenges](public/screenshots/challenges.png) |
-
-| صفحة التحدي | لوحة التقدم |
-|:---:|:---:|
-| ![challenge](public/screenshots/challenge.png) | ![dashboard](public/screenshots/dashboard.png) |
-
----
 
 ## 🗺️ خارطة الطريق (تطويرات مستقبلية)
 
@@ -207,20 +193,6 @@ vulnhunter/
 
 ---
 
-## 👤 المؤلف
-
-**[اسمك الكامل]**  
-مشارك في برنامج **1000 مبرمج** — مشروع التخرج النهائي لمادة React  
-📅 سبتمبر 2026
-
----
-
-## 📄 الرخصة
-
-هذا مشروع تعليمي لأغراض أكاديمية ضمن برنامج 1000 مبرمج.  
-المحتوى التعليمي مستوحى من أفضل ممارسات **OWASP Top 10**.
-
----
 
 <div align="center">
 
