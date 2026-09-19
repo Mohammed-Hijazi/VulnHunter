@@ -1,36 +1,231 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+# 🎯 VulnHunter — صائد الثغرات الأمنية
 
-First, run the development server:
+### منصة تعليمية تفاعلية لاكتشاف الثغرات الأمنية في الأكواد وتعلّم إصلاحها
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**اصطد الثغرة... افهمها... أصلحها... وارتقِ بالمستويات** 🏹
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-38B2AC?style=for-the-badge&logo=tailwind-css)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![License](https://img.shields.io/badge/License-Educational-orange?style=for-the-badge)
+
+</div>
+
+---
+
+## 📖 نظرة عامة
+
+**VulnHunter** هو مشروع التخرج النهائي لبرنامج "1000 مبرمج"، مبني باستخدام **Next.js** و **TypeScript** و **Tailwind CSS**.
+
+الفكرة: يتحوّل المتعلّم إلى **"صائد ثغرات"** — يعرض التطبيق كوداً برمجياً حقيقياً يحتوي على ثغرة أمنية، وعلى المستخدم أن:
+
+1. 📖 **يحلّل الكود** ويقرأه بعين الصائد
+2. 🎯 **يحدّد نوع الثغرة** الأمنية
+3. 🔧 **يختار الحل الصحيح** لإصلاحها
+4. 📚 **يتعلّم الشرح الكامل** مع الكود الآمن
+5. 🏆 **يجمع النقاط** ويفتح المستويات التالية
+
+> 💡 المشروع يربط بين **البرمجة** و **الأمن السيبراني** بشكل عملي وتفاعلي، ليخرّج مبرمجين يكتبون كوداً آمناً منذ البداية.
+
+---
+
+## ✨ المميزات
+
+- 🎯 **8 تحديات تفاعلية** موزّعة على 8 مستويات متدرجة الصعوبة
+- 🔒 **نظام مستويات مقفل**: لا يُفتح مستوى حتى تُكمل الذي قبله بالكامل
+- 💡 **نظام تلميحات ذكي**: 3 تلميحات لكل تحدٍ (كل تلميح يخصم نقاطاً)
+- 👁️ **خيار إظهار الحل**: لمن يئس تماماً — يكمل ويفتح المستوى التالي لكن بدون نقاط
+- 📚 **مكتبة معرفة كاملة**: شرح علمي لكل ثغرة (ما هي، كيف تعمل، مثال واقعي، طرق الوقاية)
+- 📊 **لوحة تقدم شخصية**: إحصائيات، نقاط، ونسبة إنجاز محفوظة تلقائياً
+- 💾 **حفظ تلقائي**: تقدمك محفوظ في المتصفح (localStorage) ويعود عند إعادة الفتح
+- 🎨 **تصميم Cyber Noir**: ثيم داكن فخم بهوية بصرية فريدة (برتقالي الصيد على أسود كربوني)
+- 🌐 **دعم كامل للعربية** (RTL) مع مصطلحات تقنية إنجليزية
+- 📱 **متجاوب بالكامل**: يعمل على الجوال والتابلت والحاسوب
+
+---
+
+## 🛡️ الثغرات الأمنية المغطاة
+
+| # | الثغرة | الوصف المختصر |
+|---|--------|---------------|
+| 1 | **SQL Injection** | حقن أوامر SQL عبر مدخلات المستخدم |
+| 2 | **XSS** | البرمجة النصية عبر المواقع |
+| 3 | **CSRF** | تزوير الطلبات عبر المواقع |
+| 4 | **IDOR** | المرجع المباشر غير الآمن للكائنات |
+| 5 | **Command Injection** | حقن أوامر نظام التشغيل |
+| 6 | **Path Traversal** | اجتياز المسار لقراءة ملفات حساسة |
+| 7 | **Weak Passwords** | تخزين كلمات المرور بنص صريح |
+| 8 | **JWT Issues** | أسرار ضعيفة وإعدادات خاطئة للرموز |
+
+---
+
+## 🎮 كيف يعمل نظام اللعب؟
+
+```
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│  اقرأ الكود │ →  │ حدد الثغرة  │ →  │ اختر الحل   │ →  │ تعلّم وأكمل │
+│  الضعيف     │    │  (سؤال 1)   │    │  (سؤال 2)   │    │  وافتح التالي│
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 📊 نظام النقاط
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| الحدث | التأثير على النقاط |
+|-------|-------------------|
+| ✅ إكمال التحدي بدون مساعدة | النقاط كاملة |
+| 💡 استخدام تلميح | **−5 نقاط** لكل تلميح |
+| ❌ إجابة خاطئة | **−5 نقاط** لكل محاولة |
+| 👁️ إظهار الحل (استسلام) | **0 نقاط** (لكن يفتح المستوى التالي) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧰 التقنيات المستخدمة
 
-To learn more about Next.js, take a look at the following resources:
+| التقنية | الاستخدام |
+|---------|-----------|
+| **Next.js 16 (App Router)** | إطار العمل الأساسي — Routing + SSR |
+| **React 19** | بناء واجهة المستخدم بالمكونات |
+| **TypeScript** | أنواع البيانات واكتشاف الأخطاء مبكراً |
+| **Tailwind CSS 3** | نظام التصميم والثيم (Cyber Noir) |
+| **React Context API** | إدارة الحالة العامة (تقدم المستخدم) |
+| **localStorage** | الحفظ الدائم للتقدم في المتصفح |
+| **react-syntax-highlighter** | تلوين وعرض الأكواد البرمجية |
+| **lucide-react** | الأيقونات |
+| **Recharts** | الرسوم البيانية للإحصائيات |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 التثبيت والتشغيل
 
-## Deploy on Vercel
+### المتطلبات المسبقة
+- Node.js إصدار 18 أو أحدث
+- npm أو yarn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### خطوات التشغيل
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# 1. استنساخ المشروع
+git clone <رابط-المستودع>
+cd vulnhunter
+
+# 2. تثبيت المكتبات
+npm install
+
+# 3. تشغيل وضع التطوير
+npm run dev
+```
+
+افتح المتصفح على: [http://localhost:3000](http://localhost:3000)
+
+### البناء للإنتاج
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 📁 هيكل المشروع
+
+```
+vulnhunter/
+├── src/
+│   ├── app/                      # الصفحات (نظام App Router)
+│   │   ├── layout.tsx            # التخطيط العام (Navbar + Footer)
+│   │   ├── page.tsx              # الصفحة الرئيسية
+│   │   ├── globals.css           # التنسيقات العامة والثيم
+│   │   ├── challenges/
+│   │   │   ├── page.tsx          # قائمة المستويات
+│   │   │   └── [id]/page.tsx     # صفحة التحدي (Dynamic Route)
+│   │   ├── learn/
+│   │   │   ├── page.tsx          # مكتبة المعرفة
+│   │   │   └── [topic]/page.tsx  # شرح ثغرة معينة
+│   │   └── dashboard/
+│   │       └── page.tsx          # لوحة التقدم والإحصائيات
+│   ├── components/               # مكونات قابلة لإعادة الاستخدام
+│   │   ├── Navbar.tsx
+│   │   ├── CodeBlock.tsx         # عرض الكود مع تلوين Syntax
+│   │   ├── ChallengeCard.tsx     # بطاقة المستوى (مفتوح/مقفل)
+│   │   ├── TopicCard.tsx
+│   │   ├── HintBox.tsx           # صندوق التلميحات
+│   │   ├── ProgressRing.tsx      # حلقة التقدم الدائرية
+│   │   └── StatCard.tsx
+│   ├── context/
+│   │   └── ProgressContext.tsx   # إدارة تقدم المستخدم (قلب المشروع)
+│   ├── data/
+│   │   ├── challenges.ts         # بيانات التحديات الثمانية
+│   │   └── topics.ts             # المحتوى التعليمي للثغرات
+│   └── lib/
+│       ├── types.ts              # أنواع TypeScript
+│       ├── storage.ts            # دوال localStorage الآمنة
+│       └── utils.ts              # دوال مساعدة (حساب النقاط...)
+├── tailwind.config.ts            # ثيم Cyber Noir
+└── package.json
+```
+
+---
+
+## 🧠 المفاهيم التقنية المستخدمة
+
+- **App Router & Dynamic Routes**: نظام `[id]` و `[topic]` للروابط الديناميكية
+- **Server vs Client Components**: فصل منطق العرض عن منطق التفاعل
+- **React Context + useReducer/useState**: إدارة حالة عامة بدون مكتبات خارجية
+- **TypeScript Interfaces**: ضمان سلامة البيانات وقت الكتابة
+- **Protected Progress Logic**: خوارزمية فتح المستويات التسلسلية
+- **SSR-safe localStorage**: حماية من أخطاء Server-Side Rendering
+- **next/dynamic مع ssr:false**: تحميل مكتبة تلوين الكود في المتصفح فقط
+
+---
+
+## 📸 لقطات الشاشة
+
+> *(أضف هنا صور المشروع لاحقاً في مجلد `public/screenshots/`)*
+
+| الصفحة الرئيسية | ساحة التحديات |
+|:---:|:---:|
+| ![home](public/screenshots/home.png) | ![challenges](public/screenshots/challenges.png) |
+
+| صفحة التحدي | لوحة التقدم |
+|:---:|:---:|
+| ![challenge](public/screenshots/challenge.png) | ![dashboard](public/screenshots/dashboard.png) |
+
+---
+
+## 🗺️ خارطة الطريق (تطويرات مستقبلية)
+
+- [ ] إضافة محرر كود تفاعلي يكتب فيه المستخدم الإصلاح بنفسه
+- [ ] وضع اختبار موقوت (Time Attack)
+- [ ] لوحة صدارة بين المستخدمين
+- [ ] ربط قاعدة بيانات حقيقية (MongoDB / Supabase)
+- [ ] نظام حسابات مستخدمين وتسجيل دخول
+- [ ] تصدير شهادة إتمام PDF
+- [ ] دعم اللغة الإنجليزية بالكامل
+
+---
+
+## 👤 المؤلف
+
+**[اسمك الكامل]**  
+مشارك في برنامج **1000 مبرمج** — مشروع التخرج النهائي لمادة React  
+📅 سبتمبر 2026
+
+---
+
+## 📄 الرخصة
+
+هذا مشروع تعليمي لأغراض أكاديمية ضمن برنامج 1000 مبرمج.  
+المحتوى التعليمي مستوحى من أفضل ممارسات **OWASP Top 10**.
+
+---
+
+<div align="center">
+
+### 🛡️ اكتب كوداً آمناً... أو سيصطاد شخص ما ثغراتك بدلاً عنك
+
+**صُنع بشغف باستخدام Next.js ⚡**
+
+</div>
